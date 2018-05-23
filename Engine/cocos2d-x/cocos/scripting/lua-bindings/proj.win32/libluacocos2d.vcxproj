@@ -110,6 +110,13 @@
     <ClCompile Include="..\manual\network\lua_extensions.c" />
     <ClCompile Include="..\manual\network\Lua_web_socket.cpp" />
     <ClCompile Include="..\manual\network\lua_xml_http_request.cpp" />
+    <ClCompile Include="..\manual\network\pt-cancel.c" />
+    <ClCompile Include="..\manual\network\pt-docancel.c" />
+    <ClCompile Include="..\manual\network\pt-init.c" />
+    <ClCompile Include="..\manual\network\pt-setcancelstate.c" />
+    <ClCompile Include="..\manual\network\pt-setcanceltype.c" />
+    <ClCompile Include="..\manual\network\pt-test.c" />
+    <ClCompile Include="..\manual\network\pt-testcancel.c" />
     <ClCompile Include="..\manual\network\socketevent.c" />
     <ClCompile Include="..\manual\network\sproto\lsproto.c" />
     <ClCompile Include="..\manual\network\sproto\sproto.c" />
@@ -199,6 +206,7 @@
     <ClInclude Include="..\manual\cocostudio\lua_cocos2dx_csloader_manual.hpp" />
     <ClInclude Include="..\manual\extension\lua_cocos2dx_extension_manual.h" />
     <ClInclude Include="..\manual\LuaBasicConversions.h" />
+    <ClInclude Include="..\manual\network\bthread.h" />
     <ClInclude Include="..\manual\network\lpeg\lpcap.h" />
     <ClInclude Include="..\manual\network\lpeg\lpcode.h" />
     <ClInclude Include="..\manual\network\lpeg\lpprint.h" />
@@ -209,6 +217,7 @@
     <ClInclude Include="..\manual\network\lua_extensions.h" />
     <ClInclude Include="..\manual\network\Lua_web_socket.h" />
     <ClInclude Include="..\manual\network\lua_xml_http_request.h" />
+    <ClInclude Include="..\manual\network\pt-internal.h" />
     <ClInclude Include="..\manual\network\sproto\msvcint.h" />
     <ClInclude Include="..\manual\network\sproto\sproto.h" />
     <ClInclude Include="..\manual\spine\LuaSkeletonAnimation.h" />

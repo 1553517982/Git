@@ -33,6 +33,7 @@
 #include <netdb.h>
 #include <unistd.h>
 #include <pthread.h>
+#include <bthread.h>
 #endif
 #include "lua.h"
 #include "lualib.h"

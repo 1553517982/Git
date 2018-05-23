@@ -390,6 +390,27 @@
     <ClCompile Include="..\manual\network\socketevent.c">
       <Filter>manual\network</Filter>
     </ClCompile>
+    <ClCompile Include="..\manual\network\pt-cancel.c">
+      <Filter>manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\manual\network\pt-docancel.c">
+      <Filter>manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\manual\network\pt-init.c">
+      <Filter>manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\manual\network\pt-setcancelstate.c">
+      <Filter>manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\manual\network\pt-setcanceltype.c">
+      <Filter>manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\manual\network\pt-test.c">
+      <Filter>manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\manual\network\pt-testcancel.c">
+      <Filter>manual\network</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\auto\lua_cocos2dx_auto.hpp">
@@ -679,6 +700,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\external\lua\lua\lua.hpp">
       <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\manual\network\bthread.h">
+      <Filter>manual\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\manual\network\pt-internal.h">
+      <Filter>manual\network</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

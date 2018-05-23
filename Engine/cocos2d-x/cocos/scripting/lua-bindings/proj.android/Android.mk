@@ -35,8 +35,6 @@ LOCAL_CFLAGS := -DRAYMOND_PACK_DEBUG
 APP_OPTIM := release
 LOCAL_MODULE    := cocos2d_lua_static
 
-LOCAL_LDLIBS += -pthread
-
 LOCAL_MODULE_FILENAME := libluacocos2d
 
 LOCAL_SRC_FILES := ../manual/CCLuaBridge.cpp \
@@ -133,6 +131,14 @@ LOCAL_SRC_FILES += ../manual/network/lpeg/lpcap.c \
 #sproto
 LOCAL_SRC_FILES += ../manual/network/sproto/lsproto.c \
                    ../manual/network/sproto/sproto.c
+#bthread
+LOCAL_SRC_FILES += ../manual/network/pt-cancel.c	\
+				   ../manual/network/pt-docancel.c \
+                   ../manual/network/pt-init.c \
+                   ../manual/network/pt-setcancelstate.c \
+                   ../manual/network/pt-setcanceltype.c \
+                   ../manual/network/pt-testcancel.c \
+                   ../manual/network/pt-test.c 
 
 #socketevent
 LOCAL_SRC_FILES += ../manual/network/socketevent.c
