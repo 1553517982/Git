@@ -1,0 +1,737 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{fc5cb953-2953-4968-83b3-39e3ff951754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{037a9a02-b906-4cc5-ad98-304acd4e25ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{2d1d0979-58cd-4ab6-b91c-13650158f1fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ide-support">
+      <UniqueIdentifier>{833bf036-cf7e-4396-ab29-5f8b36672dbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\lua_export">
+      <UniqueIdentifier>{bd84de22-903a-4968-8417-24671506058a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\lua_export\auto">
+      <UniqueIdentifier>{9b3b2f9d-7d26-495a-8f46-b5c8798637a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\lua_export\plugins">
+      <UniqueIdentifier>{1076e1c1-b11c-4f38-8a10-a495c8467cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\gamecore">
+      <UniqueIdentifier>{7f4773d1-10d4-4507-8419-5a374fd92f59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\gamecore\common">
+      <UniqueIdentifier>{73064b14-a316-4de9-ad3f-fc05bfe6a7b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\gamecore\entity">
+      <UniqueIdentifier>{33ed6bfe-05e3-47f6-a43f-9bbd271b1a27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\gamecore\network">
+      <UniqueIdentifier>{a76d8916-8cb7-40d4-b5aa-5bf3966d96fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\gamecore\scene">
+      <UniqueIdentifier>{d4a3ab43-3503-4340-bc92-faf0b956df69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GUI">
+      <UniqueIdentifier>{44522f4f-a443-44a8-a7e6-559a8e83d4ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\helpers">
+      <UniqueIdentifier>{b5bbe000-ddf1-467e-8542-4f7d4c5069b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\supports">
+      <UniqueIdentifier>{d4bf6e85-9409-4218-af29-6b7a95043c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\supports\utils">
+      <UniqueIdentifier>{9515b8b9-67bd-4368-932e-e381dcc04d0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\cocosExt">
+      <UniqueIdentifier>{ef56822c-a07d-40b9-97cb-e59cb3301022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\supports\download">
+      <UniqueIdentifier>{34388622-cfea-44ee-8a8c-239aed8f8bae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\supports\XBinary">
+      <UniqueIdentifier>{44a21e02-72dc-452f-a47d-a3e3d3d17e39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\supports\XResource">
+      <UniqueIdentifier>{d12b66bb-567a-488d-a8b7-c165e8ae65a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\supports\CustomShader">
+      <UniqueIdentifier>{0e1c00ad-8dbe-48eb-8a5d-82121b0849e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SimulatorWin.h" />
+    <ClInclude Include="stdafx.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\lua_export\lua_game_core_ccsext.h">
+      <Filter>Classes\lua_export</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\lua_export\lua_game_core_helpers.h">
+      <Filter>Classes\lua_export</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\lua_export\lua_game_core_scene.h">
+      <Filter>Classes\lua_export</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\lua_export\lua_gui_common.h">
+      <Filter>Classes\lua_export</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ide-support\RuntimeLuaImpl.h">
+      <Filter>Classes\ide-support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ide-support\CodeIDESupport.h">
+      <Filter>Classes\ide-support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ide-support\lua_debugger.h">
+      <Filter>Classes\ide-support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ide-support\SimpleConfigParser.h">
+      <Filter>Classes\ide-support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\lua_export\auto\lua_gamecore_ccsext_auto.hpp">
+      <Filter>Classes\lua_export\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\lua_export\auto\lua_gamecore_helpers_auto.hpp">
+      <Filter>Classes\lua_export\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\lua_export\auto\lua_gamecore_scene_auto.hpp">
+      <Filter>Classes\lua_export\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\lua_export\auto\lua_gui_common_auto.hpp">
+      <Filter>Classes\lua_export\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\lua_module_register.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\common\base_allocator.h">
+      <Filter>Classes\gamecore\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\common\CommonFun.h">
+      <Filter>Classes\gamecore\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\common\data_packet.h">
+      <Filter>Classes\gamecore\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\common\data_packet_reader.h">
+      <Filter>Classes\gamecore\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\common\memory_counter.h">
+      <Filter>Classes\gamecore\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\common\os_def.h">
+      <Filter>Classes\gamecore\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\common\utils.h">
+      <Filter>Classes\gamecore\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\common\vector.h">
+      <Filter>Classes\gamecore\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\common\wrand.h">
+      <Filter>Classes\gamecore\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\entity\XActionNode.h">
+      <Filter>Classes\gamecore\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\network\base_socket.h">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\network\CCNetworkLoop.h">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\network\client_socket.h">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\network\ClientSocketNormalProxy.h">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\network\ClientSocketProxy.h">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\network\net_buf.h">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\network\net_packet.h">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\network\net_packet_pool.h">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\network\SocketDelegateProtocol.h">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\scene\game_map.h">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\scene\XGameScene.h">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\scene\XGameTile.h">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\scene\XLogicScene.h">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\scene\XSceneBackgroundLayer.h">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\scene\XSceneLayer.h">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\scene\XSceneObject.h">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\scene\XSceneObjectGroup.h">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\scene\XSceneObjectModifier.h">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\scene\XSceneParticleModifier.h">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\scene\XSceneTileLayer.h">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\scene\pathfinding\astar.h">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameCore\scene\pathfinding\BresenhamLine.h">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GUI\DrawNodeEx.h">
+      <Filter>Classes\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GUI\EventRichText.h">
+      <Filter>Classes\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GUI\RichTextCreator.h">
+      <Filter>Classes\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\helpers\ActionHelpers.h">
+      <Filter>Classes\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\helpers\NodeHelpers.h">
+      <Filter>Classes\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\helpers\ResourceHelpers.h">
+      <Filter>Classes\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\helpers\SceneHelper.h">
+      <Filter>Classes\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\helpers\ScriptCallbackHelpers.h">
+      <Filter>Classes\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\helpers\SystemHelpers.h">
+      <Filter>Classes\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\helpers\XLambda.h">
+      <Filter>Classes\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\utils\encrypt\CRC.h">
+      <Filter>Classes\supports\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\utils\encrypt\Encrypt.h">
+      <Filter>Classes\supports\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\utils\md5\md5\md5.h">
+      <Filter>Classes\supports\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\utils\md5\md5\md5_loc.h">
+      <Filter>Classes\supports\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\utils\md5\XMD5Utils.h">
+      <Filter>Classes\supports\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\utils\stream\stream.h">
+      <Filter>Classes\supports\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\utils\stream\zstream.h">
+      <Filter>Classes\supports\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\SizeTo.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\XSpriteHelpers.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\Animation\XActionProtocol.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\Animation\XAnimate.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\Animation\XAnimationCache.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\Animation\XAnimationConfig.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\Animation\XAnimationFrame.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\Animation\XSpriteFrame.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\SlotAnimation\XFrameModifier.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\SlotAnimation\XFrameTransform.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\Sprite\XAnimateSprite.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\studio_ext\XActionTimelineCache.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GUI\BreadthWidget.h">
+      <Filter>Classes\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\download\XDownloader.h">
+      <Filter>Classes\supports\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\download\XDownloaderUnit.h">
+      <Filter>Classes\supports\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\CustomShader\CustomGLProgramCache.h">
+      <Filter>Classes\supports\CustomShader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XResource\XAsyncLoaderManager.h">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XResource\XResourceDataBase.h">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XResource\XResourceUtils.h">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XBinary\XBinaryCommon.h">
+      <Filter>Classes\supports\XBinary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XBinary\XFrameSet.h">
+      <Filter>Classes\supports\XBinary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XBinary\XImageSet.h">
+      <Filter>Classes\supports\XBinary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XBinary\XImageSetMgr.h">
+      <Filter>Classes\supports\XBinary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\utils\dirent_win32.h">
+      <Filter>Classes\supports\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\utils\XSystemUtils.h">
+      <Filter>Classes\supports\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\utils\unzip\XUnzipUtils.h">
+      <Filter>Classes\supports\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XResource\XAsyncLoader.h">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XResource\XAsyncLoaderCallbacks.h">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XResource\XCSBAsyncLoader.h">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XResource\XFrameAsyncLoader.h">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XResource\XGroupAsyncLoader.h">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XResource\XTextureAsyncLoader.h">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XResource\XUnzipLoader.h">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\supports\XResource\XWebLoader.h">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\studio_ext\XCSBLoaderInfo.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\studio_ext\XCSBNode.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\studio_ext\XCSLoader.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\studio_ext\XCSLoaderRet.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\SlotAnimation\XSlotAnimateSprite.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\SlotAnimation\XSlotAnimationConfig.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\SlotAnimation\XSlotFrames.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\SlotAnimation\XSlotHolderSprite.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\SlotAnimation\XSlotProtocol.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\SlotAnimation\XSlotSprite.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\Sprite\XAnimateSprite8D.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos\2d\Sprite\XSprite.h">
+      <Filter>Classes\cocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleNode.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="SimulatorWin.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ide-support\RuntimeLuaImpl.cpp">
+      <Filter>Classes\ide-support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ide-support\lua_debugger.c">
+      <Filter>Classes\ide-support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ide-support\SimpleConfigParser.cpp">
+      <Filter>Classes\ide-support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\lua_export\auto\lua_gamecore_ccsext_auto.cpp">
+      <Filter>Classes\lua_export\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\lua_export\auto\lua_gamecore_helpers_auto.cpp">
+      <Filter>Classes\lua_export\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\lua_export\auto\lua_gamecore_scene_auto.cpp">
+      <Filter>Classes\lua_export\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\lua_export\auto\lua_gui_common_auto.cpp">
+      <Filter>Classes\lua_export\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\common\CommonFun.cpp">
+      <Filter>Classes\gamecore\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\common\memory_counter.cpp">
+      <Filter>Classes\gamecore\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\common\utils.cpp">
+      <Filter>Classes\gamecore\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\common\wrand.cpp">
+      <Filter>Classes\gamecore\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\entity\XActionNode.cpp">
+      <Filter>Classes\gamecore\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\network\base_socket.cpp">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\network\CCNetworkLoop.cpp">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\network\client_socket.cpp">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\network\ClientSocketNormalProxy.cpp">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\network\ClientSocketProxy.cpp">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\network\net_buf.cpp">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\network\net_packet.cpp">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\network\net_packet_pool.cpp">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\network\SocketDelegateProtocol.cpp">
+      <Filter>Classes\gamecore\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\scene\game_map.cpp">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\scene\XGameScene.cpp">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\scene\XGameTile.cpp">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\scene\XLogicScene.cpp">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\scene\XSceneBackgroundLayer.cpp">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\scene\XSceneLayer.cpp">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\scene\XSceneObject.cpp">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\scene\XSceneObjectGroup.cpp">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\scene\XSceneObjectModifier.cpp">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\scene\XSceneParticleModifier.cpp">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\scene\XSceneTileLayer.cpp">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\scene\pathfinding\astar.cpp">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameCore\scene\pathfinding\BresenhamLine.cpp">
+      <Filter>Classes\gamecore\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GUI\DrawNodeEx.cpp">
+      <Filter>Classes\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GUI\EventRichText.cpp">
+      <Filter>Classes\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GUI\RichTextCreator.cpp">
+      <Filter>Classes\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\helpers\SceneHelper.cpp">
+      <Filter>Classes\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\helpers\ScriptCallbackHelpers.cpp">
+      <Filter>Classes\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\helpers\XLambda.cpp">
+      <Filter>Classes\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\encrypt\CRC.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\encrypt\Encrypt.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\encrypt\encryptBuffer.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\md5\md5\md5.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\md5\md5\md5_t.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\md5\XMD5Utils.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\stream\base_stream.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\stream\file_stream.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\stream\memory_stream.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\stream\zcmprs_stream.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\stream\zdecmprs_stream.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\stream\zstream.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\SizeTo.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\XSpriteHelpers.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\Animation\XActionProtocol.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\Animation\XAnimate.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\Animation\XAnimationCache.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\Animation\XAnimationConfig.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\Animation\XAnimationFrame.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\Animation\XSpriteFrame.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\SlotAnimation\XFrameModifier.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\SlotAnimation\XFrameTransform.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\Sprite\XAnimateSprite.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\studio_ext\XActionTimelineCache.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\helpers\ActionHelpers.cpp">
+      <Filter>Classes\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\helpers\NodeHelpers.cpp">
+      <Filter>Classes\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\helpers\ResourceHelpers.cpp">
+      <Filter>Classes\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\helpers\SystemHelper.cpp">
+      <Filter>Classes\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\lua_export\plugins\filesystem.c">
+      <Filter>Classes\lua_export\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GUI\BreadthWidget.cpp">
+      <Filter>Classes\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\download\XDownloader.cpp">
+      <Filter>Classes\supports\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\download\XDownloaderUnit.cpp">
+      <Filter>Classes\supports\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\CustomShader\CustomGLProgramCache.cpp">
+      <Filter>Classes\supports\CustomShader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XResource\XAsyncLoaderManager.cpp">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XResource\XResourceDataBase.cpp">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XResource\XResourceUtils.cpp">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XBinary\XFrameSet.cpp">
+      <Filter>Classes\supports\XBinary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XBinary\XImageSet.cpp">
+      <Filter>Classes\supports\XBinary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XBinary\XImageSetMgr.cpp">
+      <Filter>Classes\supports\XBinary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\XSystemUtils.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\utils\unzip\XUnzipUtils.cpp">
+      <Filter>Classes\supports\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XResource\XAsyncLoader.cpp">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XResource\XAsyncLoaderCallbacks.cpp">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XResource\XCSBAsyncLoader.cpp">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XResource\XFrameAsyncLoader.cpp">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XResource\XGroupAsyncLoader.cpp">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XResource\XTextureAsyncLoader.cpp">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XResource\XUnzipLoader.cpp">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\supports\XResource\XWebLoader.cpp">
+      <Filter>Classes\supports\XResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\studio_ext\XCSBLoaderInfo.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\studio_ext\XCSBNode.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\studio_ext\XCSLoader.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\studio_ext\XCSLoaderRet.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\SlotAnimation\XSlotAnimateSprite.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\SlotAnimation\XSlotAnimationConfig.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\SlotAnimation\XSlotFrames.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\SlotAnimation\XSlotHolderSprite.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\SlotAnimation\XSlotProtocol.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\SlotAnimation\XSlotSprite.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\Sprite\XAnimateSprite8D.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos\2d\Sprite\XSprite.cpp">
+      <Filter>Classes\cocosExt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\game.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>
