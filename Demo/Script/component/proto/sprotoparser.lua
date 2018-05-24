@@ -1,6 +1,6 @@
 local lpeg = require "lpeg"
 local table = require "table"
-local bit = require "bit"
+--local bit = require "bit"
 
 local P = lpeg.P
 local S = lpeg.S
