@@ -23,7 +23,7 @@ function sproto.new(pbin)
 end
 
 function sproto.parse(ptext)
-	local parser = require("component.proto.sprotoparser")
+	local parser = require("sprotoparser")
 	local pbin = parser.parse(ptext)
 	return sproto.new(pbin)
 end

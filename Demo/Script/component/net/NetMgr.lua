@@ -1,4 +1,5 @@
 local socketevent = require("socketevent")
+local myutils = require("common.utils")
 local protoutils = require("component.proto.protoutils")
 
 --是否已连接
@@ -26,12 +27,12 @@ NetMgr.onReceiveMsg = function(msg)
 	local type , session ,result = protoutils.unpackmsg(msg)
 	print("type: ",type)
 	print("session: ",session)
+	print("result:" , myutils.print(result))
 end
 
 
 NetMgr.onConnected = function()
 	isconnect = true
-	
 end
 
 NetMgr.onDisConnect = function()

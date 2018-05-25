@@ -1,0 +1,8 @@
+
+*.dmp
+*.pdb
+*.exp
+*.ilk
+*.log
+Demo/Bin/sdcard/UserDefault.xml
+Demo/Bin/UserDefault.xml
