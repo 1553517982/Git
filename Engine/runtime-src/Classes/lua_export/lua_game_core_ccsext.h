@@ -1,6 +1,0 @@
-#include "cocos/2d/Sprite/XAnimateSprite.h"
-#include "gameCore/entity/XActionNode.h"
-#include "cocos/2d/SizeTo.h"
-#include "cocos/studio_ext/XCSLoaderRet.h"
-#include "cocos/studio_ext/XCSBNode.h"
-//#include "cocos/2d/EntityJumpBy.h"

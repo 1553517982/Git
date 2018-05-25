@@ -4,12 +4,12 @@ require "skynet.manager"
 local CMD = {}
 local login = {}
 local roledb = {
-	["123456"] = "linhui",
-	["10010"] = "3331723",
-	["10086"] = "crazy",
-	["misswu"] = "misswu",
-	["jean"] = "jean",
-	["dabiaoge"] = "dabiaoge",
+	["111"] = "111",
+	["222"] = "222",
+	["333"] = "333",
+	["123"] = "123",
+	["1234"] = "1234",
+	["12345"] = "12345",
 }
 
 function CMD.checkRole(id, password)
