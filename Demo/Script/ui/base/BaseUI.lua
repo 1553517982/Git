@@ -2,13 +2,29 @@ require ("base.functions")
 
 BaseUI = BaseUI or BaseClass()
 
-function BaseUI:__init()
+function BaseUI:__init(viewType)
 	self.autoGameEvent = {}
 	self.rootNode = cc.Node:create()
+	if UIConfig.viewType.FullScreen == viewType then
+		self:initFullScreen()
+	end
 end
 
 function BaseUI:__delete()
 
+end
+
+function BaseUI:setContenSize(size)
+	self.rootNode:setContentSize(size)
+end
+
+function BaseUI:addChild(node,zorder,tag)
+	--zorder = zorder or 0
+	--tab = tag or 0
+	--node:setLocalZOrder(1)
+	--node:setTag(tag)
+	--node:setParent(self.rootNode)
+	self.rootNode:addChild(node)
 end
 
 function BaseUI:getRootNode()
@@ -81,4 +97,9 @@ end
 
 function BaseUI:close()
 	UIManager.Instance:hideUI(self.viewName)
+end
+
+function BaseUI:initFullScreen()
+	local winSize = cc.Director:getInstance():getWinSize()
+	self:setContenSize(winSize)
 end

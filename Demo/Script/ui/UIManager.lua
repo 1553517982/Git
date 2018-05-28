@@ -1,13 +1,26 @@
 require("ui.config.UIConfig")
+require ("base.baseclass")
+require("base.eventsystem")
+require ("base.functions")
+require("gmcmd")
 require("ui.base.BaseUI")
+
 UIManager = UIManager or BaseClass()
 
 function UIManager:__init()
 	UIManager.Instance = self
 end
 
+function UIManager:init_ui(  )
+    local root = scene.XLogicScene:sharedScene()
+    cc.Director:getInstance():replaceScene(root)
+    local showFPS = cc.UserDefault:getInstance():getBoolForKey("showFPS", true)
+    cc.Director:getInstance():setDisplayStats(showFPS)
+end
+
 function UIManager:initAll()
-	
+	GlobalEventSystem = EventSystem.New()
+	self:init_ui()
 	self.uiList = {}
 	self.uiInShow =	{}
 	self.maxUILevel = 0
@@ -126,7 +139,7 @@ function UIManager:createUI(uiKey)
 			require(""..conf.path)
 			class = _G[uiKey]
 			if class then
-				local view = class.New()
+				local view = class.New(conf.viewType)
 				self.uiList[uiKey] = view
 				return view
 			end

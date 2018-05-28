@@ -1,13 +1,8 @@
 cc.FileUtils:getInstance():addSearchPath("../Script/")
-
-require ("base.baseclass")
-require("base.eventsystem")
-require ("base.functions")
-require("ui.UIManager")
-require("gmcmd")
+cc.FileUtils:getInstance():addSearchPath("../res/")
 
 local function main()
-	GlobalEventSystem = EventSystem.New()
+	require("ui.UIManager")
 	UIManager.New()
 	UIManager.Instance:initAll()
 	UIManager.Instance:showUI("LoginView")
