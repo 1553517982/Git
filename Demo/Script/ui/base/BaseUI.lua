@@ -1,14 +1,18 @@
-BaseUI = BaseUI or class("BaseUI",function()
-	return cc.Layer:create()
-end)
+require ("base.functions")
+
+BaseUI = BaseUI or BaseClass()
 
 function BaseUI:__init()
-	self.viewName = self.__cname
 	self.autoGameEvent = {}
+	self.rootNode = cc.Node:create()
 end
 
 function BaseUI:__delete()
 
+end
+
+function BaseUI:getRootNode()
+	return self.rootNode
 end
 
 function BaseUI:registerShowCallback(callback)

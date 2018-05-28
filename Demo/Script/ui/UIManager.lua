@@ -1,5 +1,5 @@
 require("ui.config.UIConfig")
-
+require("ui.base.BaseUI")
 UIManager = UIManager or BaseClass()
 
 function UIManager:__init()
@@ -11,6 +11,7 @@ function UIManager:initAll()
 	self.uiList = {}
 	self.uiInShow =	{}
 	self.maxUILevel = 0
+	self.m_pUIRootNode = scene.XLogicScene:sharedScene():getNode(2)
 end
 
 function UIManager:showUI(name,arg)
@@ -31,9 +32,13 @@ function UIManager:showUI(name,arg)
 			return
 		end
 		
-		
+		local conf = UIConfig.config[name]
 		self:handleShowOption(name, view)
-		self.m_pUIRootNode:addChild(view:getRootNode())
+		
+		local zorder = conf.zorder or UIConfig.ZOrder.Normal
+		local tag = conf.tag or 0
+		
+		self.m_pUIRootNode:addChild(view:getRootNode(),zorder,tag)
 		
 		if (view.onEnter) then
 			view.onEnter(view, arg)
@@ -116,9 +121,9 @@ function UIManager:createUI(uiKey)
 		self.uiList[uiKey] = view
 		return view
 	else
-		local path = UIConfig.path[uiKey]
-		if path ~= nil then
-			require(""..path)
+		local conf = UIConfig.config[uiKey]
+		if conf ~= nil then
+			require(""..conf.path)
 			class = _G[uiKey]
 			if class then
 				local view = class.New()

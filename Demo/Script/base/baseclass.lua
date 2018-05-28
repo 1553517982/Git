@@ -1,5 +1,7 @@
-
-
+--[[
+	@brief: BaseClass
+	@date：Created by GuoJie Zeng on 9/4/2016
+]]
 --保存类类型的虚表
 local _class = {}
 
@@ -10,8 +12,7 @@ function BaseClass(super)
 	class_type.__init = false
 	class_type.__delete = false
 	class_type.super = super
-	class_type.New = function(...)	
-				
+	class_type.New = function(...)
 		-- 生成一个类对象
 		local obj = {}
 		obj._class_type = class_type
@@ -21,7 +22,7 @@ function BaseClass(super)
 
 		-- 调用初始化方法
 		do
-			local create 
+			local create
 			create = function(c, ...)
 				if c.super then
 					create(c.super, ...)
@@ -35,40 +36,39 @@ function BaseClass(super)
 		end
 
 		-- 注册一个delete方法
-		obj.DeleteMe = function(self)		
-			local now_super = self._class_type 
-			while now_super ~= nil do	
+		obj.destroy = function(self)
+			local now_super = self._class_type
+			while now_super ~= nil do
 				if now_super.__delete then
 					now_super.__delete(self)
 				end
 				now_super = now_super.super
 			end
-		end			
-
+		end
 		return obj
 	end
 
 	local vtbl = {}
 	_class[class_type] = vtbl
- 
+
 	setmetatable(class_type, {__newindex =
 		function(t,k,v)
 			vtbl[k] = v
 		end
-		, 
+		,
 		__index = vtbl, --For call parent method
 	})
- 
+
 	if super then
 		setmetatable(vtbl, {__index =
 			function(t,k)
 				local ret = _class[super][k]
 				--do not do accept, make hot update work right!
-				--vtbl[k] = ret
+				vtbl[k] = ret
 				return ret
 			end
 		})
 	end
- 
+
 	return class_type
 end

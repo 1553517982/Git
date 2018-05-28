@@ -1,8 +1,10 @@
 UIConfig = {}
 
-UIConfig.path = {
-    ["UpdateView"] = "ui.update.UpdateView", --热更新界面
-    ["LoginView"] = "ui.login.LoginView", --登录界面
+UIConfig.ZOrder = {
+	Normal = 1,
+}
 
-
+UIConfig.config = {
+    ["UpdateView"] = {path = "ui.update.UpdateView",},--热更新界面
+    ["LoginView"] = {path = "ui.login.LoginView", }--登录界面
 }

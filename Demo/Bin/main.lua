@@ -1,15 +1,10 @@
-cc.FileUtils:getInstance():addSearchPath("Script/")
+cc.FileUtils:getInstance():addSearchPath("../Script/")
 
-require "base.baseclass"
-require "base.functions"
+require ("base.baseclass")
+require("base.eventsystem")
+require ("base.functions")
 require("ui.UIManager")
-local myutils = require("common.utils")
-
-function gm(command)
-	local debugger = require("debug")
-	myutils.print(debugger)
-	debugger.gmcmd(command)
-end
+require("gmcmd")
 
 local function main()
 	GlobalEventSystem = EventSystem.New()
