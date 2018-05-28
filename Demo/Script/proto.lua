@@ -1,4 +1,4 @@
-local sprotoparser = require "sprotoparser"
+local sprotoparser = require("component.proto.sprotoparser")
 
 local proto = {}
 
